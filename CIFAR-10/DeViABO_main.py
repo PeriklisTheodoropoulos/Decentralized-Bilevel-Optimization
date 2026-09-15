@@ -69,12 +69,12 @@ dir_level  = 0.5 #10.0
 num_groups = 2 #3
 
 run_prefix = (
-    f"/home/ptheodorop/DFL_mnist/Eusome/Cifar10/Cifar10_github_code/{GRAPH_TYPE.replace(' ', '_')}_K{K_NODES}"
+    f"{GRAPH_TYPE.replace(' ', '_')}_K{K_NODES}"
     f"_{mode}_dir_{dir_level}_T{T}_cifar10_eta_y_[{eta_y_values}]_gamma_[{gamma_values}]_eta_x_[{eta_x_values}]_beta_[{beta_values}]"
 )
 
 incremental_filename = (
-    f"/home/ptheodorop/DFL_mnist/Eusome/Cifar10/Cifar10_github_code/DeViABO_incremental_K{K_NODES}_{GRAPH_TYPE.replace(' ', '_')}"
+    f"DeViABO_incremental_K{K_NODES}_{GRAPH_TYPE.replace(' ', '_')}"
     f"_T{T}_{mode}_dir_[{dir_level}]_cifar10.txt"
 )
 
