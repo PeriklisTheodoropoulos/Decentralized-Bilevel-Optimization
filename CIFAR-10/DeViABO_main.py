@@ -145,7 +145,7 @@ def _write_incremental_result(filepath, config_id, total_configs,
 # CIFAR-10 arrays; normalization is applied consistently after node splitting.
 # ─────────────────────────────────────────────────────────────────
 DATASET = "cifar10"
-dataset_path = f'/home/ptheodorop/DFL_mnist/cifar10_example/datasets/{DATASET}'
+dataset_path = f'./datasets/{DATASET}'
 dataset_train = datasets.CIFAR10(root=dataset_path, download=False, transform=None)
 dataset_train.targets = torch.as_tensor(np.array(dataset_train.targets))
 dataset_test  = datasets.CIFAR10(root=dataset_path, train=False, download=False, transform=None)
